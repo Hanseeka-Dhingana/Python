@@ -181,3 +181,52 @@ median_house_value	1784
 
 dtype: int64
 ```
+
+### Step 6: Univariate Analysis for (analyzing the distribution, central tendency, and spread of data effectively)   
+In Univariate analysis, plotting the right charts can help us better understand the data, which is why data visualization is so important. Matplotlib and Seaborn libraries are used to visualize our data.
+
+#### 1. Histogram for evaluating the count of the house with its housing_median_age.
+
+``` python
+plt.figure(figsize=(8, 6))
+plt.hist(df['housing_median_age'], bins=30, color='skyblue', edgecolor='black')
+plt.title('Distribution of Housing Median Age')
+plt.xlabel('Housing Median Age')
+plt.ylabel('Frequency')
+plt.show()
+```
+
+**Output**
+![](image-2.png)
+
+#### 2. Kernel density plot for understanding variance in the dataset.
+
+``` python
+# Sets the plot style to "darkgrid" for better readability.
+sns.set_style("darkgrid")           
+
+# Select only numerical columns to avoid issues with categorical data.
+numerical_columns = df.select_dtypes(include=["int64", "float64"]).columns
+
+plt.figure(figsize=(14, len(numerical_columns) * 3))    #Creates a new figure with a dynamic size.
+
+# loop through each column and returns pairs of (index, column_name)
+for idx, feature in enumerate(numerical_columns, 1):
+
+    plt.subplot(len(numerical_columns), 2, idx)    # Creates subplots (rows = number of features, 2 columns per row).
+
+    sns.histplot(df[feature], kde=True)         #kde=True adds a KDE (smooth density curve) to show the probability distribution. 
+
+    plt.title(f"{feature} | Skewness: {round(df[feature].skew(), 2)}")  #Adds a title displaying the column name and skewness value.
+
+plt.tight_layout()              #Adjusts layout to prevent overlapping of subplots.
+plt.show()
+```
+
+**Output**
+![](image-3.png)
+
+
+
+
+

@@ -196,7 +196,7 @@ plt.ylabel('Frequency')
 plt.show()
 ```
 
-**Output**
+**Output**   
 ![](https://github.com/Hanseeka-Dhingana/Python/blob/main/EDA/assets/histogram.png)
 
 #### 2. Kernel density plot for understanding variance in the dataset.
@@ -225,6 +225,21 @@ plt.show()
 
 **Output**
 ![](https://github.com/Hanseeka-Dhingana/Python/blob/main/EDA/assets/subplots.png)
+
+#### 3. Box Plot for showing the outlier in the data
+``` python
+# Creates a new figure with a specified size
+plt.figure(figsize=(10, 6))
+
+# Creates a box plot for the column median_house_value from the DataFrame df.
+sns.boxplot(y=df['median_house_value'], color='skyblue')
+plt.title('Boxplot of Median House Value')
+plt.ylabel('Median House Value')
+plt.show()
+```
+
+**Output**    
+![](https://github.com/Hanseeka-Dhingana/Python/blob/main/EDA/assets/Boxplot.png)
 
 
 

@@ -197,7 +197,7 @@ plt.show()
 ```
 
 **Output**
-![](image-2.png)
+![](https://github.com/Hanseeka-Dhingana/Python/blob/main/EDA/assets/histogram.png)
 
 #### 2. Kernel density plot for understanding variance in the dataset.
 
@@ -224,7 +224,7 @@ plt.show()
 ```
 
 **Output**
-![](image-3.png)
+![](https://github.com/Hanseeka-Dhingana/Python/blob/main/EDA/assets/subplots.png)
 
 
 

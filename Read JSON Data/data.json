@@ -1,0 +1,25 @@
+{
+  "clients": [
+    {
+      "name": "ABC Industries (Private) Limited",
+      "industry": "Textile",
+      "year_end": "30 June 2026",
+      "revenue": 450000000,
+      "team": ["Ali", "Sara"]
+    },
+    {
+      "name": "XYZ Foods Limited",
+      "industry": "Food manufacturing",
+      "year_end": "31 December 2025",
+      "revenue": 820000000,
+      "team": ["Hassan", "Ayesha", "Bilal"]
+    },
+    {
+      "name": "Delta Logistics (Private) Limited",
+      "industry": "Logistics",
+      "year_end": "30 June 2026",
+      "revenue": 150000000,
+      "team": ["Sara"]
+    }
+  ]
+}
